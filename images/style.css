@@ -11,13 +11,10 @@
     
     
 body{
-    background: url(../images/chef.jpg) no-repeat;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+    
 
-    overflow: hidden;
-    color: purple;
+    
+    color:black;
 /* background image */
     }
     
@@ -55,3 +52,85 @@ header ul li a {
     transition: all ease 0.3s;
     font-size: 18px;
 }
+
+header ul li a:hover{
+
+    color:orange;
+
+
+}
+
+/* sub menu style  */
+header ul .submenu{
+
+    position:absolute;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 20px 45px rgb(128, 105, 0);
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+header ul li:hover .submenu{
+
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+
+header ul .submenu li{
+
+    margin: 0;
+    width: 100%;
+}
+
+header ul .submenu a{
+
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px; /* Adjust margin as needed */
+}
+
+.logo img {
+    width: auto;
+    height: 45px;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px; /* Adjust margin as needed */
+
+
+
+}
+
+.content{
+
+
+    text-align: center;
+    padding-top: 70px;
+}
+
+.content h1 {
+
+    color: yellow;
+}
+
+.content img {
+    padding-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px; /* Adjust margin as needed */}
+
