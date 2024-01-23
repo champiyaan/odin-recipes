@@ -1,84 +1,203 @@
-*  {
+
+*{
 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    
+    }
+    
+    
+body{
+    background: url(../images/chef.jpg) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+/* background image */
+    }
+    
+
+    
+header{
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0.1);
+    z-index: 1000;
+    padding:0px 7%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    top: 0;left: 0;right: 0;
+/* 
+    styling the header nav  */
+
 }
-
-h1 {
-
-    font-size: 22px;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    text-align: 0;
-    font-weight: bold;
-    font-family: 'Playfair Display';
+    
+header .logo{
+    
+    font-weight: bolder;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    /* styling the header logo */
 }
-
-
-
-
-ul{
-
-
-font-family: 'Lucida Sans';
-font-size: 18px;
-text-align: center;
+    
+header .navbar ul{
+    
 list-style: none;
 
+    /* removes styling */
+
 }
-
-li {
-
-    margin-bottom: 20px;
+    
+    
+header .navbar ul li{
+    
+    position: relative;
+    float: left;
+    /* shifts nav list left  */
 }
-
-.mainimage {
-
-    text-align: center;
-   
-}
-
-.mainimage img {
+header .navbar ul li a{
+    
+    font-size: 20px;
+    padding:20px;
+    color: black;
     display: block;
-    margin:auto;
-    width: 1400px;
-    height: 600px;
-} 
+    text-decoration: none;
+    /* positioning list items  */
+    
+}
+header .navbar ul li a:hover{
+    
+    background: #333;
+    color: #fff;
 
-.navbar {
+    /* hovering effect */
+    
+}
+    
+header .navbar ul li ul{
+    
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff ;
+    display: none;
+
+    /* styling the submenu */
+}
+    
+header .navbar ul li ul li{
+    
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0.1);
+    /* styling the submenu list  */
+}
+    
+header .navbar ul li ul li ul{
+    
+    left:200px;
+    top:0;
+    
+}
+    
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    
+display: initial;
+}
+    
+    
+
+    
+
+   
+#menu-bar {
+    
+            display:none;
+            /* menu textbox disabled  */
+        }
+   
+
+header label{
+    
+            font-size: 20px;
+            color:#333;
+            cursor: pointer;
+            display: none;
+            /* styling the header menu to disappear*/
+        }
 
 
-    background: dimgray;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-right: 15px;
-    padding-left: 15px;
+        @media (max-width: 991px) {
+            header {
+                padding: 20px;
+            }
+        }
+        
+
+
+header label{
+            display: initial;
+
+}   
+
+  
+  
+header .navbar{
+    
+    position: absolute;
+    top: 100%;left:0;right: 0;
+    background: #fff;
+    border-top: 1px solid white;
+   display: none;
 
 }
 
-.navdiv { display: flex;
-         align-items: center;
-         justify-content: space-between;
+header .navbar ul li{
+    width: 100%;
+    }
 
-}
+    header .navbar ul li ul {
+    
+        position: relative;
+        width: 100%;
 
-.logo a {
+        }
 
-    font-size: 18px ;
-    font-weight:600;
+        header .navbar ul li ul li{
+            background: #eee;
+            
+            }
 
-}
+            header .navbar ul li ul li ul{
+                width: 100%;
+                left:0;
+                }
 
-li {
-    list-style: none;
-    display:inline-block;
+                #menu-bar:checked ~ .navbar {
+                    display: block;
+                }
+                
 
 
-}
+    .content {
 
-li a {
+        text-align: center;
+        color: yellow;
+        font-family: Arial, Helvetica, sans-serif;
 
-    color: white ;
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 25px;
+        padding-top: 159px;
+        font-weight: bold;
+    }
 
-}
+    .content p {
+ 
+        text-align: left;
+        color:black;
+
+    }
+
