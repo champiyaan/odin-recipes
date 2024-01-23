@@ -12,11 +12,157 @@
     </head>
     <body>
 
-        <style>
+      <style>
+
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+outline: none;
+
+}
+
+
+body{
 
 
 
-        </style>
+color:black;
+/* background image */
+}
+
+
+
+header{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+padding: 0 249px;
+border-bottom: 1px solid #dbdbdb;
+
+}
+
+header ul li {
+
+display: inline-block;
+list-style: none;
+margin: 0 30px;
+}
+
+header ul li:last-child {
+margin-right: 0;
+
+}
+
+header ul li a {
+
+text-decoration: none;
+color: #424242;
+padding: 22px 0;
+display: inline-block;
+transition: all ease 0.3s;
+font-size: 18px;
+}
+
+header ul li a:hover{
+
+color:orange;
+
+
+}
+
+/* sub menu style  */
+header ul .submenu{
+
+position:absolute;
+width: 200px;
+background-color: white;
+box-shadow: 0 20px 45px rgb(128, 105, 0);
+margin-top: -50px;
+opacity: 0;
+z-index: -999;
+transition: all ease 0.5s;
+}
+header ul li:hover .submenu{
+
+z-index: 99;
+opacity: 1;
+margin-top: 0;
+}
+
+header ul .submenu li{
+
+margin: 0;
+width: 100%;
+}
+
+header ul .submenu a{
+
+padding: 15px 20px;
+display: inline-block;
+width: 100%;
+}
+
+
+.logo {
+position: absolute;
+top: 0;
+left: 0;
+margin: 10px; /* Adjust margin as needed */
+}
+
+.logo img {
+width: auto;
+height: 45px;
+}
+
+.nav {
+position: absolute;
+top: 0;
+right: 0;
+margin: 10px; /* Adjust margin as needed */
+
+
+
+}
+
+.content{
+
+
+text-align: center;
+padding-top: 70px;
+}
+
+.content h1 {
+
+color: yellow;
+}
+
+.content img {
+padding-top: 100px;
+position: absolute;
+top: 0;
+left: 0;
+margin: 10px; /* Adjust margin as needed */}
+
+.red {
+
+color: red;
+padding-top: 100px;
+position: absolute;
+top: 0;
+right: 0;
+border: 10px;
+margin: 10px 10px; /* Adjust margin as needed */}
+
+
+
+      </style>
     
 
     <main>
@@ -57,9 +203,11 @@
 <div class="content">
     <h1>THE BEST RESTAURANT IN TOWN </h1> <br> <br> 
 
+   
     <img src="images/cook.gif" alt="">
+ 
 
-    <p>Welcome to our exquisite restaurant, where culinary delights and exceptional service await you.<br> 
+    <p class="red">Welcome to our exquisite restaurant, where culinary delights and exceptional service await you.<br> 
         Our chef, renowned for crafting mouth-watering dishes, brings a fusion of flavors that will tantalize your taste buds. 
         <br> Whether you're a connoisseur of fine dining or seeking a cozy spot for a casual meal, our restaurant offers an inviting ambiance for all occasions.
         <br>  Indulge in a gastronomic journey with our carefully curated menu featuring fresh, locally sourced ingredients.<br> 
