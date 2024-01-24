@@ -1,0 +1,332 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    outline: none;
+ 
+    
+    }
+    
+    
+    body{
+    
+    
+    
+    color:black;
+    /* background image */
+    }
+    
+    
+    
+    header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 249px;
+    border-bottom: 1px solid #dbdbdb;
+    
+    }
+    
+    header ul li {
+    
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+    padding-right: 20px;
+    }
+    
+    header ul li:last-child {
+    margin-right: 0;
+    
+    }
+    
+    header ul li a {
+    
+    text-decoration: none;
+    color: #424242;
+    padding: 22px 0;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-size: 18px;
+    }
+    
+    header ul li a:hover{
+    
+    color:orange;
+    
+    
+    }
+    
+    /* sub menu style  */
+    header ul .submenu{
+    
+    position:absolute;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 20px 45px rgb(128, 105, 0);
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+    }
+    header ul li:hover .submenu{
+    
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+    }
+    
+    header ul .submenu li{
+    
+    margin: 0;
+    width: 100%;
+    }
+    
+    header ul .submenu a{
+    
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+    }
+    
+    
+    .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px; /* Adjust margin as needed */
+    padding-left: 10px;
+    }
+    
+    .logo img {
+    width: auto;
+    height: 45px;
+    }
+    
+    .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px; /* Adjust margin as needed */
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+    }
+    
+    
+    
+    .container {
+    
+        display:flex;
+        padding-top: 60px;
+    
+        padding-left: 200px ;
+        padding-right: 200px ;
+    }
+    
+    .imagebox1 {
+    
+        height: 500px;
+        width: 500px;
+
+      
+    }
+
+    .imagebox1 img {
+
+        border-radius: 80px;
+    }
+    
+    .content2 {
+    
+        height: 500px;
+        width: 500px;
+    
+    }
+    
+    .content2 p {
+    
+            font-family: monospace;
+    
+            font-size: 18px;
+    
+        }
+        
+    
+    
+    
+    .heading {
+    
+        text-align: center;
+        padding-top: 70px;
+    ;
+    }
+    
+    .heading h1 {
+    
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+
+/* style for lasagna */
+
+
+.lasagnaheader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px; /* Adjust margin as needed */
+    padding-left: 10px;}
+
+.container3 {
+
+    display: flex; 
+    padding-left: 120px;
+    padding-left: 120px;
+    column-gap: 20px;
+    padding-top: 60px;
+    font-family: monospace;
+    font-size: 15px;
+   
+    
+    }
+    
+    .lasagnaimage {
+    
+    height: 800px;
+    width: 600px;
+   
+
+    
+    }
+    
+    .lasagnaimage img{
+    
+       width: 550px ;
+       height: 750px;
+       border-radius: 25px;
+
+    
+     
+    }
+    
+    
+    
+    .messaging {
+    
+    
+    height: 900px;
+    width: 600px;
+   
+    
+    }
+    
+/* pizza styling  */
+   
+
+
+.pizzaheader  {
+
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 10px; /* Adjust margin as needed */
+        padding-left: 10px;
+
+}
+
+.container5 {
+
+    display: flex; 
+    padding-left: 120px;
+    padding-left: 120px;
+    column-gap: 20px;
+    padding-top: 60px;
+    font-family: monospace;
+    font-size: 15px;
+
+}
+
+.piz img{
+    width: 550px ;
+    height: 750px;
+    border-radius: 25px;
+
+    
+    }
+
+    .piz {
+    
+        height: 800px;
+        width: 600px;
+       
+    
+        
+        }
+
+    .pizcontent{
+
+         
+    height: 900px;
+    width: 600px;
+   
+
+
+
+    }
+/* 
+    styling noodles */
+
+
+    
+.noodlesheader {
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px; /* Adjust margin as needed */
+    padding-left: 10px;
+    
+}
+
+
+    .container6 {
+
+        display: flex; 
+        padding-left: 120px;
+        padding-left: 120px;
+        column-gap: 20px;
+        padding-top: 60px;
+        font-family: monospace;
+        font-size: 15px;
+    
+    }
+    
+    .nod img{
+        width: 550px ;
+        height: 750px;
+        border-radius: 25px;
+    
+        
+        }
+    
+        .nod {
+        
+            height: 800px;
+            width: 600px;
+           
+        
+            
+            }
+    
+        .nodcontent{
+    
+             
+        height: 900px;
+        width: 600px;
+        }
