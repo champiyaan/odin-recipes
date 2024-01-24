@@ -52,6 +52,7 @@ header ul li {
 display: inline-block;
 list-style: none;
 margin: 0 30px;
+padding-right: 20px;
 }
 
 header ul li:last-child {
@@ -114,6 +115,7 @@ position: absolute;
 top: 0;
 left: 0;
 margin: 10px; /* Adjust margin as needed */
+padding-left: 10px;
 }
 
 .logo img {
@@ -128,37 +130,36 @@ right: 0;
 margin: 10px; /* Adjust margin as needed */
 
 
-
 }
 
-.content{
 
 
-text-align: center;
-padding-top: 70px;
+.container {
+
+    display:flex;
+    padding-top: 60px;
+
+    padding-left: 200px ;
+    padding-right: 200px ;
 }
 
-.content h1 {
+.imagebox1 {
 
-color: yellow;
+    height: 500px;
+    width: 500px;
 }
 
-.content img {
-padding-top: 100px;
-position: absolute;
-top: 0;
-left: 0;
-margin: 10px; /* Adjust margin as needed */}
+.content2 {
 
-.red {
+    height: 500px;
+    width: 500px;
+}
 
-color: red;
-padding-top: 100px;
-position: absolute;
-top: 0;
-right: 0;
-border: 10px;
-margin: 10px 10px; /* Adjust margin as needed */}
+.heading {
+
+    text-align: center;
+    padding-top: 70px;
+}
 
 
 
@@ -200,21 +201,29 @@ margin: 10px 10px; /* Adjust margin as needed */}
 </main>
 
 
-<div class="content">
-    <h1>THE BEST RESTAURANT IN TOWN </h1> <br> <br> 
+<div class="heading">
+    <h1>THE BEST RESTAURANT IN TOWN </h1>  
+</div>
+    <div class="container">
 
+   <div class="imagebox1"> 
    
-    <img src="images/cook.gif" alt="">
+ <img src="images/cook.gif" alt="">
  
+   </div>
 
-    <p class="red">Welcome to our exquisite restaurant, where culinary delights and exceptional service await you.<br> 
-        Our chef, renowned for crafting mouth-watering dishes, brings a fusion of flavors that will tantalize your taste buds. 
-        <br> Whether you're a connoisseur of fine dining or seeking a cozy spot for a casual meal, our restaurant offers an inviting ambiance for all occasions.
-        <br>  Indulge in a gastronomic journey with our carefully curated menu featuring fresh, locally sourced ingredients.<br> 
-          We take pride in delivering an unforgettable dining experience, where every dish tells a story and every moment becomes a cherished memory. 
-          <br> Join us and savor the essence of exceptional cuisine in the heart of our vibrant town.</p>
+<div class="content2">
+
+    <p>Welcome to our exquisite restaurant, where culinary delights and exceptional service await you. 
+       Our chef, renowned for crafting mouth-watering dishes, brings a fusion of flavors that will tantalize your taste buds. 
+       Whether you're a connoisseur of fine dining or seeking a cozy spot for a casual meal, our restaurant offers an inviting ambiance for all occasions.</p><br>
+       <p>Indulge in a gastronomic journey with our carefully curated menu featuring fresh, locally sourced ingredients.
+       We take pride in delivering an unforgettable dining experience, where every dish tells a story and every moment becomes a cherished memory. 
+       Join us and savor the essence of exceptional cuisine in the heart of our vibrant town.</p>
+
 </div>
 
+</div>
     </body>
     
 </html>
